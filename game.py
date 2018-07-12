@@ -129,22 +129,22 @@ while running:
     for event in pygame.event.get():
         # check if the event is the X button
         if event.type == KEYDOWN:
-            if event.key == K_w:
+            if event.key == K_UP:
                 keys[0] = True
-            elif event.key == K_a:
+            elif event.key == K_LEFT:
                 keys[1] = True
-            elif event.key == K_s:
+            elif event.key == K_DOWN:
                 keys[2] = True
-            elif event.key == K_d:
+            elif event.key == K_RIGHT:
                 keys[3] = True
         if event.type == KEYUP:
-            if event.key == K_w:
+            if event.key == K_UP:
                 keys[0] = False
-            elif event.key == K_a:
+            elif event.key == K_LEFT:
                 keys[1] = False
-            elif event.key == K_s:
+            elif event.key == K_DOWN:
                 keys[2] = False
-            elif event.key == K_d:
+            elif event.key == K_RIGHT:
                 keys[3] = False
         if event.type == QUIT:
             # if it is quit the game
